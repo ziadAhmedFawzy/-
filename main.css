@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Cairo', sans-serif;
+    direction: rtl;
+    text-align: right;
+}
+header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: #03a9f4;
+    color: #fff;
+}
+header ul li {
+    display: inline-block;
+    margin: 15px;
+}
+header ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    background-color: #1772b8;
+}
+nav li {
+    list-style: none;
+}
+nav li a {
+    text-decoration: none;
+    color: #fff;
+}
+main {
+    display: flex;
+    justify-content: space-between;
+}
+main aside {
+   width: 20%;
+   background-color: #1772b8;
+   padding: 15px;
+   text-align: center;
+   color: #fff;
+   height: 100vh;
+}
+main aside div {
+    margin: 20px 0;
+}
+main aside div a {
+    text-decoration: none;
+    color: #fff;
+}
+.trendy-books {
+    width: 80%;
+    margin: 10px;
+}
+ .trendy-books .books {
+    margin: 20px 5px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    background-color: #1772b895;
+    border-radius: 5px;
+    padding: 10px;
+    overflow: hidden;
+}
+.trendy-books .trend-book {
+    width: 100px;
+    height: 150px;
+    background-color: #eee;
+    background-image: url("img/11.jpg");
+    background-size: cover;
+    cursor: pointer;
+}
+.all-books {
+    display: flex;
+     flex-flow: row wrap;
+     justify-content: space-between;
+}
+.book {
+    width: 100px;
+    height: 150px;
+    background-color: #eee;
+    margin: 10px;
+    background-image: url("img/لماذا-نؤمن-بالآلهة-Cover-Thumbnail-3.jpg");
+    background-size: cover;
+    cursor: pointer;
+}
+footer {
+    background-color: #03a9f4;
+    color: #fff;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+    padding: 10px;
+}
+.footer-title {
+    text-align: center;
+    font-size: 2.5em;
+    color: #fff;
+    background-color: #03a9f4;
+    margin: 10px 0 0 0;
+}
+footer ul li {
+    margin: 10px 0;
+}
+@media screen and (min-width: 552px) and (max-width: 660px) {
+    main aside {
+        display: none;
+    }
+    .trendy-books {
+        width: 100%;
+    }
+}
+@media screen and (min-width: 492px) and (max-width: 552px) {
+    main aside {
+        display: none;
+    }
+    .trendy-books {
+        width: 100%;
+    }
+    header {
+        flex-flow: column wrap;
+        align-content: center;
+        justify-content: center;
+    }
+    header h1 {
+        text-align: center;
+    }
+}
+@media screen and (min-width: 396px) and (max-width: 492px) {
+    main aside {
+        display: none;
+    }
+    .trendy-books {
+        width: 100%;
+    }
+    header {
+        flex-flow: column wrap;
+        align-content: center;
+        justify-content: center;
+    }
+    header h1 {
+        text-align: center;
+    }
+    .trendy-books .one{
+        display: none;
+    }
+    header ul li {
+        font-size: 12px;
+    }
+}
+@media screen and (min-width: 314px) and (max-width: 396px) {
+    main aside {
+        display: none;
+    }
+    .trendy-books {
+        width: 100%;
+    }
+    header {
+        flex-flow: column wrap;
+        align-content: center;
+        justify-content: center;
+    }
+    header h1 {
+        text-align: center;
+    }
+    .trendy-books .one {
+        display: none;
+    }
+    .trendy-books .two {
+        display: none;
+    }
+    header ul li {
+        font-size: 10px;
+        margin: 10px;
+    }
+}
+@media screen and (max-width: 314px) {
+    main aside {
+        display: none;
+    }
+    .trendy-books {
+        width: 100%;
+    }
+    header {
+        flex-flow: column wrap;
+        align-content: center;
+        justify-content: center;
+    }
+    header h1 {
+        text-align: center;
+        font-size: 1em;
+    }
+    .trendy-books .one {
+        display: none;
+    }
+    .trendy-books .two {
+        display: none;
+    }
+    .trendy-books .three {
+        display: none;
+    }
+    header ul li {
+        font-size: 7px;
+        margin: 7px;
+    }
+    nav li {
+        font-size: 10px;
+    }
+    .all-books {
+        flex-flow: column wrap;
+        justify-content: center;
+        align-content: center;
+    }
+    h2 {
+        font-size: 15px;
+    }
+}
